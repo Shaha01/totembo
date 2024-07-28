@@ -1,0 +1,152 @@
+@import 'fonts.css';
+
+
+/* **** Root **** */
+:root {
+    --CB: 'Comfortaa-Bold';
+    --CR: 'Comfortaa-Regular';
+    --MR: 'Monserrat-Regular';
+    --MB: 'Monserrat-Bold';
+    --RM: 'Roboto-Medium';
+    --RR: 'Roboto-Regular';
+    --dark_blue: #040D1F;
+    --white: #ffffff;
+    --grey: #C8C8C8;
+    --orang: #ED8E00;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(128, 128, 128);
+    border-radius: 30px;
+}
+
+
+.news-title__top {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.news-items {
+    display: grid;
+    grid-template-columns: 255px, 255px, 255px, 255px;
+    grid-template-rows: 250px, 100px, 250px;
+    gap: 30px;
+    position: relative;
+}
+
+.news-box {
+    position: relative;
+    width: 100%;
+    min-width: 248px;
+    min-height: 250px;
+}
+
+.news-box:nth-of-type(6n + 1){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.news-box:nth-of-type(6n + 6){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+
+.news-bg {
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.news-status {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #323232;
+    font-family: var(--MR);
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: var(--white);
+    border-radius: 8px;
+    /* margin-bottom: 40px; */
+}
+
+.news-status__big {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #323232;
+    font-family: var(--MR);
+    font-size: 16px;
+    padding: 15px 30px;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+.news-title {
+    max-width: 492px;
+    width: 100%;
+    position: absolute;
+    color: #FFF;
+    font-family: var(--MB);
+    font-size: 22px;
+    top: 83px;
+    left: 20px;
+}
+
+.news-title__big{
+    top: 110px;
+}
+
+.news-text {
+    max-width: 460px;
+    width: 100%;
+    position: absolute;
+    color: #E1E1E1;
+    font-family: var(--MR);
+    font-size: 18px;
+    top: 150px;
+    left: 20px;
+}
+
+.news-text__big{
+    top: 184px;
+}
+
+.news-data {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.news-data-time {
+    margin-left: 10px;
+    color: #FFF;
+    font-family: var(--MR);
+    font-size: 16px;
+}
+
+.fa-regular {
+    font-size: 20px;
+    color: var(--white);
+}
+
+.news-items{
+    margin-bottom: 60px;
+}

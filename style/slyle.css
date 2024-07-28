@@ -1,0 +1,171 @@
+@import 'fonts.css';
+
+
+/* **** Root **** */
+:root {
+    --CB: 'Comfortaa-Bold';
+    --CR: 'Comfortaa-Regular';
+    --MR: 'Monserrat-Regular';
+    --MB: 'Monserrat-Bold';
+    --RM: 'Roboto-Medium';
+    --RR: 'Roboto-Regular';
+    --dark_blue: #040D1F;
+    --white: #ffffff;
+    --grey: #C8C8C8;
+    --orang: #ED8E00;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* root end */
+
+/* .header {
+    height: 100vh;
+} */
+
+.header-content {
+    display: grid;
+    column-gap: 60px;
+    row-gap: 30px;
+    grid-template-columns: 710px 340px;
+}
+
+.header-box {
+    grid-template-columns: repeat(3, 1fr);
+    /* min-height: 800px; */
+}
+
+.header-box:nth-of-type(3n + 1) {
+    min-height: 800px;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+
+.header-first__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+}
+
+.header-second__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.header-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav__link {
+    margin-right: 50px;
+}
+
+.header-box {
+    border-radius: 8px;
+    background: #E1E1E1;
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 22px;
+    /* padding-left: 92px; */
+    padding-bottom: 27px;
+    text-align: center;
+}
+
+
+
+.header-box:first-of-type {
+    max-width: 710px;
+}
+
+
+
+
+
+.header-box__status {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 8px;
+    background: #323232;
+    padding: 10px 30px;
+    color: #FFF;
+    font-family: var(--MR);
+    font-size: 20px;
+}
+
+
+.header-box__icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    row-gap: 20px;
+
+}
+
+.header-box__title {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: var(--black);
+    text-align: center;
+    font-family: var(--MB);
+    font-size: 20px;
+    ;
+    text-transform: capitalize;
+}
+
+.header-box__price {
+    color: var(--black);
+    font-family: var(--MR);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.header-box__img {
+    width: 125px;
+}
+
+.header-box__img-big {
+    width: 218px;
+    margin-right: 40px;
+}
+
+
